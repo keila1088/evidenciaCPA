@@ -1,12 +1,23 @@
-//ejemplo de implicit binding o invocacion de método
 const objeto = {
     name: "foo",
+    lastName: "figthers",
     metodo: function(){
-        console.log(`hola, me llamo ${this.name}`);
+        const showldLastName = () => {
+            console.log(this.lastName);
+        }
+        console.log(this.name);
+        showldLastName();
     }
 };
 
-objeto.metodo();
+function persona(nombre){
+    this.name = nombre;
+    console.log(this);
+}
+
+const sarasa2 = new persona('Keila');
+
+
 
 const PASSWORD_INVALID_MSG = 'The password is invalid';
 const PASSWORD_VALID_MSG = 'The password is valid';
@@ -41,7 +52,8 @@ saveContent.addEventListener("click", function (event){
   //console.log(PARENT_ON_SUBMIT_MSG);
 }, true);
 
-saveButton.addEventListener("click", function(){
+/*saveButton.addEventListener("click", function(){
   //console.log("inside event click");
-});
+});*/
 
+saveButton.addEventListener("click", sarasa2);
