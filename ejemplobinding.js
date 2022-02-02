@@ -1,3 +1,9 @@
+//ejemplo de default binding
+const example = function(){
+    console.log(this);
+}
+
+
 //ejemplo de implicit binding o invocacion de método
 const objeto = {
     name: "foo",
