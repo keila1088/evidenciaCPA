@@ -1,24 +1,3 @@
-const objeto = {
-    name: "foo",
-    lastName: "figthers",
-    metodo: function(){
-        const showldLastName = () => {
-            console.log(this.lastName);
-        }
-        console.log(this.name);
-        showldLastName();
-    }
-};
-
-function persona(nombre){
-    this.name = nombre;
-    console.log(this);
-}
-
-const sarasa2 = new persona('Keila');
-
-
-
 const PASSWORD_INVALID_MSG = 'The password is invalid';
 const PASSWORD_VALID_MSG = 'The password is valid';
 const PARENT_ON_SUBMIT_MSG = 'Submit event triggered in parent';
@@ -52,8 +31,6 @@ saveContent.addEventListener("click", function (event){
   //console.log(PARENT_ON_SUBMIT_MSG);
 }, true);
 
-/*saveButton.addEventListener("click", function(){
-  //console.log("inside event click");
-});*/
-
-saveButton.addEventListener("click", sarasa2);
+saveButton.addEventListener("click", function(){
+  console.log("inside event click");
+});
