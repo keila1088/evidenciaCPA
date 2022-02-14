@@ -48,7 +48,7 @@ const users = [
      "age": 23
     },
     {
-     "name": "Hubert Hessel I",
+     "name": "Hubert Hessel",
      "gender": "Androgyne",
      "id": "9",
      "age": 15
